@@ -48,9 +48,16 @@ while True:
         print("Terima kasih telah menggunakan sistem kami")
         break
     else:
-        print("Username tidak ditemukan")
-        print("Silahkan daftar terlebih dahulu")
-        username.append(input("Masukkan Nama Pengguna: "))
-        password.append(input("Masukkan Password Pengguna: "))
+        print("Nama pengguna tidak ditemukan")
+        input_daftar=input("Apakah Anda ingin mendaftar? (ya/tidak): ")
 
+        if input_daftar=='ya':
+            new_user=input("Masukkan Nama Pengguna Baru: ")
+            new_pwd=input("Masukkan Password Baru: ")
+            username.append(new_user)
+            password.append(new_pwd)
+            print("Pendaftaran berhasil, silahkan login kembali")
+        else:
+            print("Silahkan coba login kembali")
+        os.system('cls')
 os.system('cls')
