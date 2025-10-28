@@ -127,7 +127,6 @@ try:
             program_berjalan = False
             break
         elif hasil:
-            # panggil paket menu (tidak butuh argumen di versi sederhana ini)
             menu_paket()
 except KeyboardInterrupt:
     print('\nProgram dihentikan')
